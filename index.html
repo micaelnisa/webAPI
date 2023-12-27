@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Os meus Álbuns</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
+
+<body>
+    <header>
+        <div>
+            <h1 class="titulo">Os meus álbuns mais ouvidos</h1>
+        </div>
+        <div>
+
+        </div>
+
+        <div class="filtros">
+            <div>
+                <label for="filtroArtista">Selecionar Artista:</label>
+                <select id="filtroArtista" onchange="filtrarPorArtista()">
+                    <option value="">Todos os Artistas</option>
+                </select>
+            </div>
+            <div>
+
+                <label for="ordem">Ordenar por:</label>
+                <select id="ordem" onchange="ordenarAlbuns()">
+                    <option value="desc">Mais ouvidos</option>
+                    <option value="asc">Menos ouvidos</option>
+                    
+                </select>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div id="topAlbuns"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

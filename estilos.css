@@ -1,0 +1,67 @@
+#topAlbuns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    
+}
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+
+.album {
+    padding: 1px;
+    text-align: center;
+}
+
+.album img {
+    max-width: 100%;
+    height: auto;
+}
+
+.album p{
+    font-family: 'Poppins', sans-serif;
+}
+.plays{
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;}
+
+.nomeArtista{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+.nomeAlbum{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+main{
+
+    margin: 50px 100px 0px 100px;
+}
+.body{
+
+    background: black;
+}
+header{
+    position: sticky;
+    top:0;
+    margin-left: 100px;
+    margin-top: 100px;
+
+}
+
+.filtros{
+    display: inline-flex;
+}
+.filtros div:first-child{
+    margin-right: 10px;
+}
+
