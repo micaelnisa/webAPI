@@ -32,16 +32,21 @@ function exibirAlbuns(albuns) {
 
         const urlImagem = imagemAlbum ? imagemAlbum : semImagem;
         elementoAlbum.innerHTML = `
+        <div> 
+        <p class="plays"> ${reproducoes}x</p>
+        
             <a href="${url}" target="_blank">
                 <img src="${urlImagem}" alt="Capa do Álbum">
+                
             </a>
+            </div>
             <p>
     <span class="nomeAlbum">${nomeAlbum}</span>
     <br>
     <span class="nomeArtista">${nomeArtista}</span>
 </p>
 
-            <p class="plays"> ${reproducoes} Scrobbles</p>
+            
         `;
 
         containerTopAlbuns.appendChild(elementoAlbum);
@@ -85,3 +90,10 @@ function filtrarPorArtista() {
 
     exibirAlbuns(albunsExibidos);
 }
+
+
+
+
+
+
+let reproducoes = 0;

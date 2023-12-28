@@ -1,67 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: #121212;
+}
+
 #topAlbuns {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 70px;
+
+
 }
-.titulo{
+
+.nota {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.titulo {
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 6em;
+    color: #ff4ca8;
 }
 
 
 .album {
+    position: relative;
     padding: 1px;
     text-align: center;
+    height: 100%; 
 }
 
 .album img {
+    min-width: 150px; 
     max-width: 100%;
-    height: auto;
+    height: 100%; 
+    
 }
 
-.album p{
+.album div {
+    position: relative;
+
+}
+
+
+.album p {
     font-family: 'Poppins', sans-serif;
 }
-.plays{
 
+.plays {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-    font-size: 20px;}
+    font-size: 20px;
+    padding: 20px;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff4ca8;
 
-.nomeArtista{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nomeArtista {
+    color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 18px;
 }
 
 
-.nomeAlbum{
+.nomeAlbum {
+    color: #ff4ca8;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
-main{
+
+main {
 
     margin: 50px 100px 0px 100px;
 }
-.body{
+
+.body {
 
     background: black;
 }
-header{
-    position: sticky;
-    top:0;
+
+header {
+
     margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 50px;
 
 }
 
-.filtros{
+.filtros {
     display: inline-flex;
 }
-.filtros div:first-child{
+
+.filtros div:first-child {
     margin-right: 10px;
 }
 
+
+select {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 3px solid #ff4ca8;
+    background-color: #121212;
+    border-radius: 30px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+option {
+    color: white;
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+.filtros {
+
+    margin-top: 2%;
+}

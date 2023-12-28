@@ -13,7 +13,8 @@
 <body>
     <header>
         <div>
-            <h1 class="titulo">Os meus álbuns mais ouvidos</h1>
+            <h1 class="titulo">Os meus álbuns <br> mais ouvidos de 2023</h1>
+            <p class="nota"> "x" representa o número de reproduções das músicas pertencentes ao álbum.</p>
         </div>
         <div>
 
@@ -21,14 +22,14 @@
 
         <div class="filtros">
             <div>
-                <label for="filtroArtista">Selecionar Artista:</label>
+               
                 <select id="filtroArtista" onchange="filtrarPorArtista()">
                     <option value="">Todos os Artistas</option>
                 </select>
             </div>
             <div>
 
-                <label for="ordem">Ordenar por:</label>
+                
                 <select id="ordem" onchange="ordenarAlbuns()">
                     <option value="desc">Mais ouvidos</option>
                     <option value="asc">Menos ouvidos</option>
